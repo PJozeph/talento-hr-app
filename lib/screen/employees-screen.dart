@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talento/modal/employee.dart';
+import 'package:talento/widget/AddFloatingButton.dart';
 import 'package:talento/widget/empty-employees-list.dart';
 
 class EmployeesScreen extends StatelessWidget {
@@ -40,13 +41,7 @@ class EmployeesScreen extends StatelessWidget {
         ),
       ),
       body: content,
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Navigate to the add employee screen
-          //Navigator.pushNamed(context, '/add-employee');
-        },
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: AddFloatingButton(),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
