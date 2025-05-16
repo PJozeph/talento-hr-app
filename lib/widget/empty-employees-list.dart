@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:talento/screen/new-department-screen.dart';
 
 class EmptyEmployeesList extends StatelessWidget {
   const EmptyEmployeesList({super.key});
@@ -29,8 +30,11 @@ class EmptyEmployeesList extends StatelessWidget {
           // buttin with icon
           ElevatedButton.icon(
             onPressed: () {
-              // Navigate to the add employee screen
-              //Navigator.pushNamed(context, '/add-employee');
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const NewEmployeeScreen(),
+                ),
+              );
             },
             icon: const Icon(Icons.add),
             label: const Text('Add new'),

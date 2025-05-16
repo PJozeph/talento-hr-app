@@ -16,12 +16,12 @@ class _AddFloatingButtonState extends State<AddFloatingButton> {
     setState(() {
       _showMenu = !_showMenu;
     });
+  }
 
-    void _hideMenu() {
-      setState(() {
-        _showMenu = false;
-      });
-    }
+  void _hideMenu() {
+    setState(() {
+      _showMenu = false;
+    });
   }
 
   @override
@@ -45,14 +45,14 @@ class _AddFloatingButtonState extends State<AddFloatingButton> {
                       leading: Icon(Icons.apartment, color: Colors.black87),
                       title: Text('Department'),
                       onTap: () {
-                        // Handle Add Department
+                        _hideMenu();
                       },
                     ),
                     ListTile(
                       leading: Icon(Icons.person_add, color: Colors.black87),
                       title: Text('Employees'),
                       onTap: () {
-                        // Handle Add Employee
+                        _hideMenu();
                       },
                     ),
                   ],

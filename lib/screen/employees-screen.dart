@@ -4,9 +4,9 @@ import 'package:talento/widget/AddFloatingButton.dart';
 import 'package:talento/widget/empty-employees-list.dart';
 
 class EmployeesScreen extends StatelessWidget {
-  const EmployeesScreen({super.key, required this.employees});
+  EmployeesScreen({super.key});
 
-  final List<Employee> employees;
+  final List<Employee> employees =List.empty();
 
   @override
   Widget build(BuildContext context) {
