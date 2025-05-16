@@ -7,7 +7,7 @@ final lightTheme = ThemeData(
   brightness: Brightness.light,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.light,
-    seedColor: Colors.purpleAccent,
+    seedColor: Color(0xFF6C60FF), // Changed to #6C60FF
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
@@ -17,7 +17,7 @@ final darkTheme = ThemeData(
   brightness: Brightness.dark,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.dark,
-    seedColor: Colors.purpleAccent,
+    seedColor: Color(0xFF6C60FF), // Changed to #6C60FF
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
