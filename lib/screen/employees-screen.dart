@@ -83,6 +83,22 @@ class EmployeesScreen extends StatelessWidget {
         ),
       ),
       body: content,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Navigate to the add employee screen
+          //Navigator.pushNamed(context, '/add-employee');
+        },
+        child: const Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
+      ),
     );
   }
 }
