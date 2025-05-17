@@ -9,7 +9,11 @@ final lightTheme = ThemeData(
     brightness: Brightness.light,
     seedColor: Color(0xFF6C60FF), // Changed to #6C60FF
   ),
-  textTheme: GoogleFonts.latoTextTheme(),
+  textTheme: GoogleFonts.latoTextTheme().copyWith(
+    bodyLarge: GoogleFonts.lato(
+      color: Colors.black,
+    ),
+  ),
 );
 
 final darkTheme = ThemeData(
@@ -19,7 +23,11 @@ final darkTheme = ThemeData(
     brightness: Brightness.dark,
     seedColor: Color(0xFF6C60FF), // Changed to #6C60FF
   ),
-  textTheme: GoogleFonts.latoTextTheme(),
+  textTheme: GoogleFonts.latoTextTheme().copyWith(
+    bodyLarge: GoogleFonts.lato(
+      color: Colors.white,
+    ),
+  ),
 );
 
 void main() {
@@ -41,4 +49,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

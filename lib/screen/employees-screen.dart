@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talento/modal/employee.dart';
-import 'package:talento/widget/AddFloatingButton.dart';
+import 'package:talento/widget/add-dloating-button.dart';
 import 'package:talento/widget/empty-employees-list.dart';
 
 class EmployeesScreen extends StatelessWidget {

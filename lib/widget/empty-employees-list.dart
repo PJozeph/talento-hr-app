@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:talento/screen/new-department-screen.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:talento/screen/new-employee-screen.dart';
 
 class EmptyEmployeesList extends StatelessWidget {
   const EmptyEmployeesList({super.key});
@@ -11,6 +12,12 @@ class EmptyEmployeesList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          SvgPicture.asset(
+            'assets/images/empty-employee-list.svg',
+            width: 100,
+            height: 100,
+          ),
+          const SizedBox(height: 30),
           Text(
             'EMPTY',
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
@@ -27,6 +34,7 @@ class EmptyEmployeesList extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
+
           // buttin with icon
           ElevatedButton.icon(
             onPressed: () {
